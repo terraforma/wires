@@ -48,8 +48,8 @@ void tfLandscape::GenerateGrid() {
 		}
 	}
 	// Create the edges between nodes
-	for (int x = 0; x < numNodesX; x++) {
-		for (int y = 0; y < numNodesY; y++)	{
+	for (int x = 0; x <= numNodesX; x++) {
+		for (int y = 0; y <= numNodesY; y++)	{
 			if (x > 0) { // Connect to the node to it's left
 				int nodeA = nodeIds[x][y];
 				int nodeB = nodeIds[x-1][y];
